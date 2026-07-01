@@ -1,0 +1,9 @@
+{
+  "monthly_charges_psi": 0.8664,
+  "psi_status": "ALERT: Significant drift!",
+  "ref_missing_rate": 0.0,
+  "cur_missing_rate": 0.000142,
+  "auc_reference": 0.7674,
+  "auc_current": 0.7467,
+  "auc_drop": 0.0207
+}

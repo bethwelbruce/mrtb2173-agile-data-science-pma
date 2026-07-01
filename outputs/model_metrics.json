@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "accuracy": 0.731,
+    "roc_auc": 0.7093,
+    "f1": 0.1483
+  },
+  "improved": {
+    "accuracy": 0.7253,
+    "roc_auc": 0.7416,
+    "f1": 0.1605
+  },
+  "best_params": {
+    "learning_rate": 0.05,
+    "max_depth": 3,
+    "n_estimators": 100
+  }
+}

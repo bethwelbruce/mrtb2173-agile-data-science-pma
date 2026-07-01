@@ -1,0 +1,77 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Full Pipeline (install + all steps)",
+      "type": "shell",
+      "command": "python setup_and_run.py",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "2. Install Dependencies",
+      "type": "shell",
+      "command": "pip install -r requirements.txt",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "3. Generate Dataset",
+      "type": "shell",
+      "command": "python src/generate_data.py",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "4. Run EDA",
+      "type": "shell",
+      "command": "python src/eda.py",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "5. Data Quality Checks",
+      "type": "shell",
+      "command": "python src/data_quality.py",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "6. Automated Validation",
+      "type": "shell",
+      "command": "python src/validate.py",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "7. Train Models",
+      "type": "shell",
+      "command": "python src/train_models.py",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "8. Run Tests (pytest)",
+      "type": "shell",
+      "command": "python -m pytest tests/ -v",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "9. Run Monitoring",
+      "type": "shell",
+      "command": "python src/monitoring.py",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "10. Launch Streamlit Dashboard",
+      "type": "shell",
+      "command": "streamlit run src/dashboard.py",
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": [],
+      "isBackground": true
+    }
+  ]
+}

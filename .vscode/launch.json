@@ -1,0 +1,63 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Generate Dataset",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/generate_data.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run EDA",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/eda.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Data Quality Checks",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/data_quality.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Validate Data",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/validate.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Train Models",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/train_models.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run Monitoring",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/monitoring.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Streamlit Dashboard",
+      "type": "python",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "${workspaceFolder}/src/dashboard.py"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Pytest (All Tests)",
+      "type": "python",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests/", "-v"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
